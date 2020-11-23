@@ -20,9 +20,13 @@ function Heading() {
     greeting = "Good Night";
     customStyle.color = "blue";
   }
-  <h1 className="heading" style={customStyle}>
-    {greeting}
-  </h1>;
+  const hdr = (
+    <h1 className="heading" style={customStyle}>
+      {greeting}
+    </h1>
+  );
+
+  return hdr;
 }
 
 export default Heading;
