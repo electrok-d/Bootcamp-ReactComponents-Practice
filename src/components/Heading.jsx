@@ -1,7 +1,7 @@
 import React from "react";
 
 function Heading() {
-  const date = new Date();
+  const date = new Date(2020, 11, 12, 19);
   const currentTime = date.getHours();
 
   let greeting;
@@ -20,13 +20,12 @@ function Heading() {
     greeting = "Good Night";
     customStyle.color = "blue";
   }
-  const hdr = (
+
+  return (
     <h1 className="heading" style={customStyle}>
       {greeting}
     </h1>
   );
-
-  return hdr;
 }
 
 export default Heading;
